@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Tutorial - Forms and Buttons</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #555555;
+            }
+
+            h1, h2 {
+                color: #4b2e83;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+        <h2>Task 1</h2>
+
+        <form method="POST">
+            <label for="uid">User ID</label>
+            <input type="text" id="uid" name="uid" />
+            <br />
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" />
+            <br />
+            <button type="submit">Log in</button>
+        </form>
+
+        <h2>Task 2</h2>
+        <form method="POST">
+            <fieldset>
+                <legend>Who is your favorite pony?</legend>
+                <ul>
+                <li>
+                    <label for="pinkie">Pinkie Pie</label>
+                    <input type="radio" id="pinkie" name="pony" value="pinkie" checked />
+                </li>
+                <li>
+                    <label for="rainbow">Rainbow Dash</label>
+                    <input type="radio" id="rainbow" name="pony" value="rainbow" />
+                </li>
+                <li>
+                    <label for="twilight">Twilight Sparkle</label>
+                    <input type="radio" id="twilight" name="pony" value="twilight" />
+                </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Hotdog preferences</legend>
+                <ul>
+                    <li>
+                        <label for="vegan">Vegan</label>
+                        <input type="checkbox" id="vegan" name="hotdog" value="vegan" />
+                    </li>
+                    <li>
+                        <label for="onions">Onions</label>
+                        <input type="checkbox" id="onions" name="hotdog" value="onions" />
+                    </li>
+                    <li><label for="mustard">Mustard</label>
+                        <input type="checkbox" id="mustard" name="hotdog" value="mustard" />
+
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <h2>Task 3</h2>
+        <form>
+            <h3>Edit your preferences</h3>
+            <ul>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" />
+                </li>
+                <li>
+                    <label for="website">Website</label>
+                    <input type="url" id="website" name="website" />
+                </li>
+                <li>
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" />
+                </li>
+                <li>
+                    <label for="fave-color">Favorite color</label>
+                    <input type="color" id="fave-color" name="fave-color" />
+                </li>
+                <li>
+                    <button>Update preferences</button>
+                </li>
+            </ul>
+        </form>
+
+        <h2>Task 4</h2>
+        <form>
+            <ul>
+                <li>
+                <label for="food">Pick your favorite food:</label>
+                <select name="food" id="food">
+                    <optgroup label="mains">
+                        <option value="salad">Salad</option>
+                        <option value="curry">Curry</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="fajitas">Fajitas</option>
+                    </optgroup>
+                    
+                    <optgroup label="snacks">
+                        <option value="biscuits">Biscuits</option>
+                        <option value="crisps">Crisps</option>
+                        <option value="fruit">Fruit</option>
+                        <option value="breadsticks">Breadsticks</option>
+                    </optgroup>
+                </select>
+
+                </li>
+                <li>
+                <button>Submit choice</button>
+                </li>
+            </ul>
+        </form>
+
+        <h2>Task 5</h2>
+        <form>
+            <fieldset>
+                <legend>Personal details</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" />
+                </div>
+
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" />
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Comment information</legend>
+                <div>
+                    <label for="comment">Comment:</label>
+                    <input type="text" id="comment" name="comment" />
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+            </fieldset>
+        </form>
+
+        <h2>Task 6</h2>
+        <form>
+            <h3>Enter your support query</h3>
+            <ul>
+                <li>
+                    <label for="uname">User name:</label>
+                    <input type="text" name="uname" id="uname" minlength="5" maxlength="20" required />
+                </li>
+                <li>
+                    <label for="email">Email address:</label>
+                    <input type="email" name="email" id="email" required />
+                </li>
+                <li>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" name="phone" id="phone" maxlength="15" required />
+                </li>
+                <li>
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" id="comment" maxlength="200" required> </textarea>
+                </li>
+                <li>
+                    <button>Submit comment</button>
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>
